@@ -2,9 +2,11 @@ import { NextResponse } from "next/server";
 import { createTransport } from "nodemailer";
 
 export async function POST(req) {
-  console.log("MAILER_EMAIL =", process.env.MAILER_EMAIL);
-console.log("MAILER_PASSWORD exists =", !!process.env.MAILER_PASSWORD);
   const data = await req.json();
+
+  console.log("MAILER_EMAIL:", process.env.MAILER_EMAIL);
+  console.log("MAILER_PASSWORD exists:", !!process.env.MAILER_PASSWORD);
+  console.log("Resume:", data.resume);
 
   try {
     const transporter = createTransport({
