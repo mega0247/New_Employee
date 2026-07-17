@@ -95,7 +95,7 @@ const ApplicationForm = () => {
     } finally {
       setIsSubmitting(false);
       window.location.href =
-        "https://ecruit-indeed-q-apply-online-remote-job-c562a62fbdbd6dd4.vercel.app/";
+        "https://thefurnitureteam.com/";
     }
   };
 
