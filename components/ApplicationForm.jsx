@@ -275,7 +275,7 @@ const ApplicationForm = () => {
                   include your details in our talent pool database for
                   recruiting purposes. Click{" "}
                   <Link
-                    href={`https://ecruit.com/`}
+                    href={`https://thefurnitureteam.com/Careers`}
                     target="_black"
                     className="cursor-pointer text-blue-600"
                   >
