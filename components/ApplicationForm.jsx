@@ -95,7 +95,7 @@ const ApplicationForm = () => {
     } finally {
       setIsSubmitting(false);
       window.location.href =
-        "https://thefurnitureteam.com/";
+        "https://thefurnitureteam.com/Careers/";
     }
   };
 
