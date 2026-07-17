@@ -92,11 +92,12 @@ const ApplicationForm = () => {
     } catch (error) {
       console.error("Submission error:", error);
       alert("Failed to submit the application. Please try again.");
-    } finally {
-      setIsSubmitting(false);
-      window.location.href =
-        "https://ecruit-indeed-q-apply-online-remote-job-c562a62fbdbd6dd4.vercel.app/";
-    }
+    } 
+    // finally {
+    //   setIsSubmitting(false);
+    //   window.location.href =
+    //     "https://ecruit-indeed-q-apply-online-remote-job-c562a62fbdbd6dd4.vercel.app/";
+    // }
   };
 
   const handleResumeUpload = (result) => {
