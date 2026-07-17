@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
+.flex-between {
+  @apply flex justify-between items-center;
+}
+
+.flex-evenly {
+  @apply flex justify-evenly items-center;
+}
+
+.flex-end {
+  @apply flex justify-end items-center;
+}
+
+.col-flex {
+  @apply flex flex-col;
+}
+
+.input-style {
+  @apply w-[500px] max-md:w-full border-2 border-slate-200 px-3 py-3 rounded-md text-sm mt-2 mb-2 max-md:mt-0;
+}
