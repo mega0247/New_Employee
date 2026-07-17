@@ -86,7 +86,7 @@ const ApplicationForm = () => {
         fullName: "",
         email: "",
         phone: "",
-        resume: "",
+        resume: null,
         consent: false,
       });
     } catch (error) {
