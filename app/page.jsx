@@ -63,9 +63,9 @@ export default function Home() {
         <div className="max-w-7xl px-16 py-3 flex-between m-auto max-md:px-5 max-md:gap-2 max-md:py-3">
           <div className="text-base text-slate-700 flex items-center gap-3">
             <Image
-              src={`/images/ecruit.svg`}
+              src={`/images/furnitureteam.png`}
               alt="ecruit"
-              width={90}
+              width={180}
               height={30}
               className="cursor-pointer hover:opacity-80 object-contain"
             />
