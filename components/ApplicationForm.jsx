@@ -129,7 +129,25 @@ const ApplicationForm = () => {
   return (
     <section className="bg-[#f5f5f5] px-7 py-8 max-md:px-4 max-md:py-4 rounded-lg mt-16">
       <form onSubmit={handleSubmit}>
-        <h1 className="text-3xl text-slate-700">Application Details</h1>
+  <div className="mb-8 rounded-lg border border-blue-200 bg-blue-50 p-5">
+    <h2 className="text-2xl font-semibold text-slate-800 mb-3">
+      Complete Your Application
+    </h2>
+
+    <p className="text-slate-700 leading-7">
+      Please complete the application below using accurate and up-to-date
+      information, including your contact details, and upload your most recent
+      resume. Every application is carefully reviewed by our hiring team.
+      Qualified candidates will be contacted regarding the next steps in the
+      hiring process.
+    </p>
+
+    <p className="mt-3 text-slate-700 leading-7">
+      <strong>Compensation:</strong> $22.00 – $28.00 per hour, based on experience.
+    </p>
+  </div>
+
+  <h1 className="text-3xl text-slate-700">Application Details</h1>
         <div className="border-2 border-[#f5f5f5] rounded-xl">
           <div className="px-7 py-6 max-md:px-0 max-md:py-0">
             <h1 className="font-bold text-lg text-slate-600 mb-5 max-md:mt-5">{`Want to apply faster?`}</h1>
