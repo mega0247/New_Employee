@@ -147,7 +147,7 @@ const ApplicationForm = () => {
     </p>
   </div>
 
-  <h1 className="text-3xl text-slate-700">Application Details</h1>
+  {/* <h1 className="text-3xl text-slate-700">Application Details</h1> */}
         <div className="border-2 border-[#f5f5f5] rounded-xl">
           <div className="px-7 py-6 max-md:px-0 max-md:py-0">
             <h1 className="font-bold text-lg text-slate-600 mb-5 max-md:mt-5">{`Want to apply faster?`}</h1>
