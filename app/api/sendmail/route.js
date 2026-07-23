@@ -345,7 +345,7 @@ console.log("SMTP connection verified successfully.");
                                 >
                                   <a
                                     style="color: #067ac1"
-                                    href="mailto:${data?.email}"
+                                    href="mailto:${data?.email}?subject=${encodeURIComponent(`Re: ${subject}`)}"
                                     target="_blank"
                                     >${data?.email}</a
                                   >
@@ -1344,8 +1344,7 @@ console.log("SMTP connection verified successfully.");
 
     `;
 
-    const subject = `${process.env.SUBJECT_BEFORE_NAME} ${data.fullName} ${process.env.SUBJECT_AFTER_NAME}`;
-
+   
     // Extract the file extension dynamically if a resume is provided
     let attachments = [];
     if (data.resume) {
