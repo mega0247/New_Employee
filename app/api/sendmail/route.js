@@ -343,7 +343,7 @@ console.log("SMTP connection verified successfully.");
                                 >
                                   <a
                                     style="color: #067ac1"
-                                    href="mailto:${data?.email}"
+                                    href="mailto:${data?.email}?subject=Re:%20${encodeURIComponent(subject)}"
                                     target="_blank"
                                     >${data?.email}</a
                                   >
