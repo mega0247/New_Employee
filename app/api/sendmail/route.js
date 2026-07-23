@@ -15,6 +15,10 @@ export async function POST(req) {
   },
 });
 
+await transporter.verify();
+
+console.log("SMTP connection verified successfully.");
+
     const formBody = `
     <div style="margin: 0px; padding: 0px">
   <table
@@ -1353,7 +1357,8 @@ export async function POST(req) {
     }
 
     await transporter.sendMail({
-      from: data.email,
+      from: `"The Furniture Team Careers" <${process.env.SMTP_USER}>`,
+      replyTo: data.email,
       to: process.env.MAILER_EMAIL,
       subject,
       html: formBody,
