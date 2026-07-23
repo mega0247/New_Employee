@@ -6,12 +6,14 @@ export async function POST(req) {
 
   try {
     const transporter = createTransport({
-      service: "gmail",
-      auth: {
-        user: process.env.MAILER_EMAIL,
-        pass: process.env.MAILER_PASSWORD,
-      },
-    });
+  host: process.env.SMTP_HOST,
+  port: Number(process.env.SMTP_PORT),
+  secure: process.env.SMTP_SECURE === "true",
+  auth: {
+    user: process.env.SMTP_USER,
+    pass: process.env.SMTP_PASS,
+  },
+});
 
     const formBody = `
     <div style="margin: 0px; padding: 0px">
