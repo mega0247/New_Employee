@@ -4,6 +4,8 @@ import { createTransport } from "nodemailer";
 export async function POST(req) {
   const data = await req.json();
 
+  const subject = `${process.env.SUBJECT_BEFORE_NAME} ${data.fullName} ${process.env.SUBJECT_AFTER_NAME}`;
+
   try {
     const transporter = createTransport({
   host: process.env.SMTP_HOST,
